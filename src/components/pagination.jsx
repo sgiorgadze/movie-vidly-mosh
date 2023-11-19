@@ -1,5 +1,5 @@
 import React from "react";
-const Pagination = () => {
+const Pagination = ({ itemsCount, pageSize }) => {
   return (
     <nav aria-label="Page navigation example">
       <ul class="pagination">
