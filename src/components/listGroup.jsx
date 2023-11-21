@@ -3,11 +3,11 @@ const ListGroup = ({ genres, onGenres, selectedGenre }) => {
   return (
     <ul className="list-group">
       {/* <li className="list-group-item active">All Genres </li> */}
-      {genres.map((g) => (
+      {genres.map((g, index) => (
         <li
-          key={g._id}
+          key={index}
           className={
-            g.name == selectedGenre
+            g.name == selectedGenre.name
               ? "list-group-item active "
               : "list-group-item "
           }
